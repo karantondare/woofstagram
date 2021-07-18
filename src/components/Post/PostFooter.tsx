@@ -16,6 +16,7 @@ type Props = {
 
 const PostFooter: React.FC<Props> = ({ name, description }) => {
   const [like, setLike] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [userData, setUserData] = useState<UserData>(
     JSON.parse(localStorage.getItem("userData") || "{}")
   );
